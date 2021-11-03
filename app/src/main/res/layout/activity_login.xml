@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/_fv_logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Eat Smart, Live Better"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/ivFVGif"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/_635882753347" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/crdGoogleLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:background="@color/white"
+        app:cardCornerRadius="10dp">
+
+        <Button
+            android:id="@+id/btnGoogleLogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:drawableStart="@drawable/google_50"
+            android:paddingStart="10dp"
+            android:text="Log in with Google"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/crdFacebookLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="70dp"
+        android:background="@color/dark_blue_fb"
+        app:cardCornerRadius="10dp">
+
+        <Button
+            android:id="@+id/btnFacebookLogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dark_blue_fb"
+            android:drawableStart="@drawable/facebook_50"
+            android:paddingStart="10dp"
+            android:text="Log in with Facebook"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:gravity="center"
+        android:text="Log in with an e-mail"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>
