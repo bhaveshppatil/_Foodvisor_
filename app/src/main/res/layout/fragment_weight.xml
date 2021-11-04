@@ -57,7 +57,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/etUserHeight"
+                    android:id="@+id/etUserWeight"
                     android:layout_width="100dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="10dp"

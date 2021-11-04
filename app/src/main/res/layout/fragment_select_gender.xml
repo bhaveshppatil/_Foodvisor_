@@ -83,13 +83,4 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/ivGenderArrow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/layoutText"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:src="@drawable/arrow_64" />
-
 </RelativeLayout>

@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context=".Fragments.AgeFragment">
 
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -81,6 +82,19 @@
                     android:text="Year"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnDone"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/et_bg"
+                    android:backgroundTint="#344354"
+                    android:gravity="center"
+                    android:text="Done"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
 
             </LinearLayout>
 

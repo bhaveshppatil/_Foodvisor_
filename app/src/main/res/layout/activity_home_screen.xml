@@ -17,10 +17,11 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:mbn_backgroundBottomColor="#38E48E"
-        app:mbn_circleColor="@color/white"
-        app:mbn_countBackgroundColor="#344354"
-        app:mbn_defaultIconColor="@color/white"
-        app:mbn_selectedIconColor="#344354" />
+        app:mbn_backgroundBottomColor="@color/white"
+        app:mbn_circleColor="#38E48E"
+        app:mbn_countBackgroundColor="#38E48E"
+        app:mbn_countTextColor="#344354"
+        app:mbn_defaultIconColor="#344354"
+        app:mbn_selectedIconColor="@color/white" />
 
 </LinearLayout>

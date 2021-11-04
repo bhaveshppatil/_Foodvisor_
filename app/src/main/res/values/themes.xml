@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.Foodvisor" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#0CE9B3</item>
-        <item name="colorPrimaryVariant">#0CE9B3</item>
+        <item name="colorPrimary">#38E48E</item>
+        <item name="colorPrimaryVariant">#38E48E</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

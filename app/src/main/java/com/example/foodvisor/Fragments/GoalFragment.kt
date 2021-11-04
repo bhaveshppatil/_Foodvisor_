@@ -17,7 +17,13 @@ class GoalFragment : Fragment(R.layout.fragment_goal) {
 
         navController = Navigation.findNavController(view)
 
-        ivGoalArrow.setOnClickListener {
+        crdLoseWeight.setOnClickListener {
+            navController.navigate(R.id.action_goalFragment_to_typicalDayFragment)
+        }
+        crdEatHealthy.setOnClickListener {
+            navController.navigate(R.id.action_goalFragment_to_typicalDayFragment)
+        }
+        crdMuscles.setOnClickListener {
             navController.navigate(R.id.action_goalFragment_to_typicalDayFragment)
         }
     }

@@ -177,13 +177,4 @@
         </androidx.cardview.widget.CardView>
     </RelativeLayout>
 
-    <ImageView
-        android:id="@+id/ivTypicalDayArrow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/layoutCard"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:src="@drawable/arrow_64" />
-
 </RelativeLayout>
