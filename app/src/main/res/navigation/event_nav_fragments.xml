@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/event_nav_fragments.xml"
+    app:startDestination="@id/selectGender">
+
+    <fragment
+        android:id="@+id/selectGender"
+        android:name="com.example.foodvisor.Fragments.SelectGender"
+        android:label="fragment_select_gender"
+        tools:layout="@layout/fragment_select_gender">
+        <action
+            android:id="@+id/action_selectGender_to_ageFragment"
+            app:destination="@id/ageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ageFragment"
+        android:name="com.example.foodvisor.Fragments.AgeFragment"
+        android:label="fragment_age"
+        tools:layout="@layout/fragment_age">
+        <action
+            android:id="@+id/action_ageFragment_to_heightFragment"
+            app:destination="@id/heightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/heightFragment"
+        android:name="com.example.foodvisor.Fragments.HeightFragment"
+        android:label="fragment_height"
+        tools:layout="@layout/fragment_height">
+        <action
+            android:id="@+id/action_heightFragment_to_weightFragment"
+            app:destination="@id/weightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalFragment"
+        android:name="com.example.foodvisor.Fragments.GoalFragment"
+        android:label="fragment_goal"
+        tools:layout="@layout/fragment_goal">
+        <action
+            android:id="@+id/action_goalFragment_to_typicalDayFragment"
+            app:destination="@id/typicalDayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/typicalDayFragment"
+        android:name="com.example.foodvisor.Fragments.TypicalDayFragment"
+        android:label="fragment_typical_day"
+        tools:layout="@layout/fragment_typical_day" >
+        <action
+            android:id="@+id/action_typicalDayFragment_to_privacyPolicy"
+            app:destination="@id/privacyPolicy" />
+    </fragment>
+    <fragment
+        android:id="@+id/weightFragment"
+        android:name="com.example.foodvisor.Fragments.WeightFragment"
+        android:label="fragment_weight"
+        tools:layout="@layout/fragment_weight">
+        <action
+            android:id="@+id/action_weightFragment_to_goalFragment"
+            app:destination="@id/goalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacyPolicy"
+        android:name="com.example.foodvisor.Fragments.PrivacyPolicy"
+        android:label="fragment_privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+</navigation>

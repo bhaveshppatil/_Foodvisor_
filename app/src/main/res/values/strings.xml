@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Foodvisor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="personal_data">We never share your personal data to third parties</string>
+    <string name="data_stay">Your data stay between you and us.</string>
+
+    <string name="privacy"><u>Privacy Policy</u>.</string>
+    <string name="terms"><u>Terms</u>.</string>
+
 </resources>
