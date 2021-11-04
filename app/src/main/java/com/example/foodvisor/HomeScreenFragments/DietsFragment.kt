@@ -1,0 +1,12 @@
+package com.example.foodvisor.HomeScreenFragments
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import com.example.foodvisor.R
+
+class DietsFragment : Fragment(R.layout.fragment_diets) {
+
+}
