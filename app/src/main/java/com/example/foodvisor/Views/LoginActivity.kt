@@ -28,7 +28,7 @@ class LoginActivity : AppCompatActivity() {
 
         val user: FirebaseUser? = mAuth.currentUser
         if (user != null) {
-            val intent = Intent(this, ProfileCreation::class.java)
+            val intent = Intent(this, HomeScreen::class.java)
             startActivity(intent)
         }
     }
