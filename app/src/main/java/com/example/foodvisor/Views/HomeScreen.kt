@@ -5,7 +5,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
-import com.example.foodvisor.HomeScreenFragments.*
+import com.example.foodvisor.Fragments.HomeScreenFragments.*
 import com.example.foodvisor.R
 
 class HomeScreen : AppCompatActivity() {

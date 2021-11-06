@@ -28,6 +28,7 @@ class BreakfastAdapter(
     override fun onBindViewHolder(holder: BreakfastViewHolder, position: Int) {
         val breakfastModel = breakfastModelModelList[position]
         holder.setBreakfastData(breakfastModel)
+
         holder.crdRecipeView.setOnClickListener {
             clicklistener.onBreakfastRecipeClick(breakfastModel)
         }

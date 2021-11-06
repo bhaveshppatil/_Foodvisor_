@@ -12,12 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Foodvisor">
         <activity
+            android:name=".Views.IngredientsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Views.PremiumUnlocked"
+            android:exported="true" />
+        <activity
             android:name=".Random"
             android:exported="true" />
         <activity
             android:name=".Views.HomeScreen"
             android:exported="true" />
-
         <activity
             android:name=".Views.ProfileCreation"
             android:exported="true" />
