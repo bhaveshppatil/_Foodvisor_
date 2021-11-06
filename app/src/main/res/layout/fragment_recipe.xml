@@ -24,8 +24,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/acme"
+                android:fontFamily="@font/actor"
                 android:gravity="center"
+                android:layout_margin="10dp"
                 android:text="Learn to healthier with the recipe of our \nRD Nutritionists"
                 android:textColor="@color/black"
                 android:textSize="20sp"
@@ -102,11 +103,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:fontFamily="@font/poppins_medium"
-            android:text="Snacks"
+            android:text="Drinks"
             android:textSize="18sp" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view_snacks"
+            android:id="@+id/recycler_view_drinks"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"

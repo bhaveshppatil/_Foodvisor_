@@ -3,12 +3,12 @@ package com.example.foodvisor.Fragments.HomeScreenFragments
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.foodvisor.Adapter.BreakfastAdapter
 import com.example.foodvisor.Adapter.DinnerAdapter
+import com.example.foodvisor.Adapter.DrinksAdapter
 import com.example.foodvisor.Adapter.LunchAdapter
 import com.example.foodvisor.ClickListener.Clicklistener
 import com.example.foodvisor.Model.*
@@ -32,10 +32,14 @@ class RecipeFragment : Fragment(R.layout.fragment_recipe), Clicklistener {
     private var dinnerModelList = mutableListOf<DinnerModel>()
     private lateinit var dinnerAdapter: DinnerAdapter
 
+    private var drinksModelList = mutableListOf<DrinksModel>()
+    private lateinit var drinksAdapter: DrinksAdapter
+
     private val runnable = Runnable {
         readBreakfastJson()
         readLunchJson()
         readDinnerJson()
+        readDrinksJson()
     }
 
     private fun readBreakfastJson() {
@@ -49,6 +53,23 @@ class RecipeFragment : Fragment(R.layout.fragment_recipe), Clicklistener {
                 data = inputStream.read()
             }
             buildBreakfastPojoFromJson(builder.toString())
+
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
+    private fun readDrinksJson() {
+        try {
+            var inputStream: InputStream = context?.assets?.open("drinks.json")!!
+            var data = inputStream.read()
+            var builder: StringBuilder = StringBuilder()
+            while (data != -1) {
+                val ch = data.toChar()
+                builder.append(ch)
+                data = inputStream.read()
+            }
+            buildDrinksPojoFromJson(builder.toString())
 
         } catch (e: Exception) {
             e.printStackTrace()
@@ -101,6 +122,13 @@ class RecipeFragment : Fragment(R.layout.fragment_recipe), Clicklistener {
         updateBreakfastUi()
     }
 
+    private fun buildDrinksPojoFromJson(json: String) {
+        val type = object : TypeToken<Drinks>() {}.type
+        val drinks: Drinks = Gson().fromJson(json, type)
+        drinksModelList = drinks.drinksModels as MutableList<DrinksModel>
+        updateDrinksUi()
+    }
+
     private fun buildDinnerFromJson(json: String) {
         val type = object : TypeToken<Dinner>() {}.type
         val dinner: Dinner = Gson().fromJson(json, type)
@@ -121,6 +149,12 @@ class RecipeFragment : Fragment(R.layout.fragment_recipe), Clicklistener {
         }
     }
 
+    private fun updateDrinksUi() {
+        activity?.runOnUiThread {
+            drinksAdapter.updateDrinksData(drinksModelList)
+        }
+    }
+
     private fun updateLunchUi() {
         activity?.runOnUiThread {
             lunchAdapter.updateLunchData(lunchModelList)
@@ -135,7 +169,6 @@ class RecipeFragment : Fragment(R.layout.fragment_recipe), Clicklistener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
 
         btnPremiumUnlocked.setOnClickListener {
             val intent = Intent(context, PremiumUnlocked::class.java)
@@ -159,6 +192,12 @@ class RecipeFragment : Fragment(R.layout.fragment_recipe), Clicklistener {
         dinner_recyclerView.layoutManager =
             LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         dinner_recyclerView.adapter = dinnerAdapter
+
+        val drinks_recyclerView = view.findViewById<RecyclerView>(R.id.recycler_view_drinks)
+        drinksAdapter = context?.let { DrinksAdapter(it, drinksModelList, this) }!!
+        drinks_recyclerView.layoutManager =
+            LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+        drinks_recyclerView.adapter = drinksAdapter
 
         startBreakfastBackground()
     }
@@ -193,5 +232,17 @@ class RecipeFragment : Fragment(R.layout.fragment_recipe), Clicklistener {
         intent.putExtra("PreparationB", dinnerModel.preparation)
         intent.putExtra("IngredientsB", dinnerModel.ingredients)
         intent.putExtra("ImagesB", dinnerModel.images)
-        startActivity(intent)    }
+        startActivity(intent)
+    }
+
+    override fun onDrinksRecipeClick(drinksModel: DrinksModel) {
+        val intent = Intent(context, IngredientsActivity::class.java)
+        intent.putExtra("ArticleNameB", drinksModel.articleName)
+        intent.putExtra("CaloriesB", drinksModel.calories)
+        intent.putExtra("MinutesB", drinksModel.minutes)
+        intent.putExtra("PreparationB", drinksModel.preparation)
+        intent.putExtra("IngredientsB", drinksModel.ingredients)
+        intent.putExtra("ImagesB", drinksModel.images)
+        startActivity(intent)
+    }
 }
