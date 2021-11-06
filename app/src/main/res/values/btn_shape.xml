@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="icons">
+        <item>@drawable/coffee_cup_64</item>
+        <item>@drawable/dinner_64</item>
+        <item>@drawable/dinner1_64</item>
+        <item>@drawable/drink_64</item>
+    </array>
+    <array name="colors">
+        <item>@android:color/white</item>
+        <item>@android:color/white</item>
+        <item>@android:color/white</item>
+        <item>@android:color/white</item>
+        <item>@android:color/white</item>
+    </array>
+</resources>

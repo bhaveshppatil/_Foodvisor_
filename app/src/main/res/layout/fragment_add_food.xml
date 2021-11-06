@@ -1,14 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
     tools:context=".Fragments.HomeScreenFragments.AddFoodFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="stay_healthy.json"
+        app:lottie_loop="true" />
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_below="@id/animation_view"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:drawableBottom="@drawable/ic_baseline_linked_camera_24"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Don't forget, \nYou can always take a photo, we will recognize your food!"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
 
-</FrameLayout>
+
+    <com.ramotion.circlemenu.CircleMenuView
+        android:id="@+id/circle_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:button_colors="@array/colors"
+        app:button_icons="@array/icons"
+        app:icon_color="@color/white"
+        app:icon_menu="@drawable/ic_baseline_add_24" />
+
+
+</RelativeLayout>

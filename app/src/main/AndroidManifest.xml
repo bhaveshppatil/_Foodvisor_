@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Foodvisor">
         <activity
+            android:name=".Views.AddFoodActivity"
+            android:exported="true" />
+        <activity
             android:name=".Views.IngredientsActivity"
             android:exported="true" />
         <activity

@@ -77,4 +77,10 @@ dependencies {
 
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
+    implementation 'com.ramotion.circlemenu:circle-menu:0.3.2'
+
+    // Lottie dependency
+    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
 }
