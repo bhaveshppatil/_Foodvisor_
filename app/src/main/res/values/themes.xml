@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Foodvisor" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.Foodvisor" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#38E48E</item>
         <item name="colorPrimaryVariant">#38E48E</item>
@@ -10,6 +10,7 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
+        <item name="colorAccent">#0091ea</item>
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>

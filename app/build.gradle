@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
     id 'kotlin-android-extensions'
     id 'com.google.gms.google-services'
 }
@@ -82,5 +83,21 @@ dependencies {
     // Lottie dependency
     def lottieVersion = "3.4.0"
     implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    //Anko
+    def anko_version = '0.10.0'
+    implementation "org.jetbrains.anko:anko-commons:$anko_version"
+
+    //Room
+    implementation 'androidx.room:room-ktx:2.3.0'
+    kapt 'androidx.room:room-compiler:2.3.0'
+
+    // ViewModel and LiveData
+    def arch_version = '2.2.0-alpha01'
+    implementation "androidx.lifecycle:lifecycle-extensions:$arch_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$arch_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$arch_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$arch_version"
+
 
 }

@@ -26,18 +26,22 @@ class AddFoodFragment : Fragment(R.layout.fragment_add_food) {
                 when (index) {
                     0 -> {
                         val intent = Intent(context, AddFoodActivity::class.java)
+                        intent.putExtra("category", "Breakfast")
                         startActivity(intent)
                     }
                     1 -> {
                         val intent = Intent(context, AddFoodActivity::class.java)
+                        intent.putExtra("category", "Lunch")
                         startActivity(intent)
                     }
                     2 -> {
                         val intent = Intent(context, AddFoodActivity::class.java)
+                        intent.putExtra("category", "Dinner")
                         startActivity(intent)
                     }
                     3 -> {
                         val intent = Intent(context, AddFoodActivity::class.java)
+                        intent.putExtra("category", "Drinks")
                         startActivity(intent)
                     }
                 }
