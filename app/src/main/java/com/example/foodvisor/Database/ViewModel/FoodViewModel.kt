@@ -15,4 +15,12 @@ class FoodViewModel(private val foodRepository: FoodRepository) : ViewModel() {
     fun getFood(): LiveData<List<FoodModel>> {
         return foodRepository.getAllFoodData()
     }
+
+    fun getSearchFood(search: String): LiveData<List<FoodModel>> {
+        return foodRepository.getFoodData(search)
+    }
+
+    fun removeFood(foodModel: FoodModel) {
+        foodRepository.removeFood(foodModel)
+    }
 }

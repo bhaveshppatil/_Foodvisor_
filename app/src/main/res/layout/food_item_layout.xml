@@ -58,7 +58,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/tvFoodDecs"
+                android:id="@+id/tvCaloriesSpear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvFoodName"
@@ -66,7 +66,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_toEndOf="@id/view2"
                 android:fontFamily="@font/poppins_medium"
-                android:text="Nothing will work unless you do"
+                android:text="18 cal"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 

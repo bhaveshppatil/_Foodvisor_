@@ -33,7 +33,7 @@
                 android:layout_marginStart="@dimen/dp_20"
                 android:fontFamily="@font/poppins_medium"
                 android:gravity="center"
-                android:text="Create new Routine"
+                android:text="Add your lunch"
                 android:textColor="@color/white"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -55,7 +55,10 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_50"
             android:hint="Food Name"
             app:boxBackgroundColor="#20D81B60"
             app:boxCornerRadiusTopEnd="@dimen/dp_10"
@@ -67,43 +70,6 @@
                 android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dp_10"
-            android:hint="Description"
-            app:boxBackgroundColor="#20D81B60"
-            app:boxCornerRadiusTopEnd="@dimen/dp_10"
-            app:boxCornerRadiusTopStart="@dimen/dp_10">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etDecs"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dp_10"
-            android:hint="Link"
-            app:boxBackgroundColor="#20D81B60"
-            app:boxCornerRadiusTopEnd="@dimen/dp_10"
-            app:boxCornerRadiusTopStart="@dimen/dp_10">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etImageLink"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
 
         <Button
             android:id="@+id/btnAddRoutine"
@@ -124,7 +90,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#0583EA"
+            android:background="@drawable/bg_color"
             android:orientation="vertical">
 
         </LinearLayout>

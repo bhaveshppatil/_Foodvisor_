@@ -23,19 +23,20 @@ class AddFoodActivity : AppCompatActivity() {
     private var handler = Handler()
     private lateinit var pgsBar: ProgressBar
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_food)
+    override fun onStart() {
+        super.onStart()
+
 
         var intent = Intent()
         intent = getIntent()
         val category = intent.getStringExtra("category")
         lunch_category.text = category
 
-        pgsBar = findViewById<View>(R.id.progressBar4) as ProgressBar
+    }
 
-        pgsBar.max = 650
-        var i = 0;
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_add_food)
 
         BottomSheetBehavior.from(design_bottom_sheet).apply {
             peekHeight = 200
@@ -49,6 +50,19 @@ class AddFoodActivity : AppCompatActivity() {
         tabLayout.addTab(tabLayout.newTab().setText("Search"))
         tabLayout.addTab(tabLayout.newTab().setText("Photo"))
         tabLayout.addTab(tabLayout.newTab().setText("Favorites"))
+
+        pgsBar = findViewById<View>(R.id.progressBar4) as ProgressBar
+        pgsBar.max = 650
+        var i = 0;
+        if (tabLayout.getTabAt(1)?.isSelected == true) {
+            if (i <= 650) {
+                i += 34
+                // Update the progress bar and display the current value in text view
+                pgsBar.progress = i
+                update_progress.text = "${i.toString()} / ${pgsBar.max} "
+                Toast.makeText(this@AddFoodActivity, "Calories updated", Toast.LENGTH_SHORT).show()
+            }
+        }
 
         tabLayout.tabGravity = TabLayout.GRAVITY_FILL
 
@@ -65,15 +79,6 @@ class AddFoodActivity : AppCompatActivity() {
                     resources.getColor(android.R.color.black),
                     PorterDuff.Mode.SRC_IN
                 );
-                if (tabLayout.getTabAt(1)?.isSelected == true){
-                    if (i <= 650) {
-                        i += 15
-                        // Update the progress bar and display the current value in text view
-                        pgsBar.progress = i
-                        update_progress.text = "${i.toString()} / ${pgsBar.max} "
-                        Toast.makeText(this@AddFoodActivity, "Calories updated", Toast.LENGTH_SHORT).show()
-                    }
-                }
             }
 
             override fun onTabUnselected(tab: TabLayout.Tab) {

@@ -8,8 +8,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "food_manager")
 data class FoodModel(
     @ColumnInfo(name = "name") var name: String,
-    @ColumnInfo(name = "decs") var decs: String,
-    @ColumnInfo(name = "link") var link: String,
+    @ColumnInfo(name = "calories") var calories: String,
 
 ) {
     @PrimaryKey(autoGenerate = true)

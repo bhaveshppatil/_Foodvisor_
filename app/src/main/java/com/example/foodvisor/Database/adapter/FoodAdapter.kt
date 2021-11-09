@@ -5,9 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.PopupMenu
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.foodvisor.Database.adapter.Clicklistener
 import com.example.foodvisor.R
 import com.masai.myjournalapp.Model.FoodModel
 
@@ -15,6 +17,7 @@ import com.masai.myjournalapp.Model.FoodModel
 class FoodAdapter(
     val context: Context,
     val foodList: MutableList<FoodModel>,
+    val clicklistener: Clicklistener
 ) : RecyclerView.Adapter<FoodViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FoodViewHolder {
@@ -25,11 +28,25 @@ class FoodAdapter(
     }
 
     override fun onBindViewHolder(holder: FoodViewHolder, position: Int) {
-
         val foodModel = foodList[position]
-        holder.title.text = foodModel.name
-        holder.decs.text = foodModel.decs
-        holder.setFoodData(foodModel)
+        holder.tvFoodName.text = foodModel.name
+        holder.tvCaloriesSpear.text = foodModel.calories
+
+        holder.menuBar.setOnClickListener {
+            val popupMenu = PopupMenu(context, holder.menuBar)
+            popupMenu.inflate(R.menu.menu_list)
+
+            popupMenu.setOnMenuItemClickListener(PopupMenu.OnMenuItemClickListener { item ->
+                when (item.itemId) {
+                    R.id.remove -> {
+                        clicklistener.onFoodRemoveClick(foodModel)
+                    }
+                }
+                false
+            })
+            popupMenu.show()
+        }
+
     }
 
     override fun getItemCount(): Int {
@@ -39,11 +56,8 @@ class FoodAdapter(
 
 class FoodViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-    val title: TextView = itemView.findViewById(R.id.tvFoodName)
-    val decs: TextView = itemView.findViewById(R.id.tvFoodDecs)
+    val tvFoodName: TextView = itemView.findViewById(R.id.tvFoodName)
+    val tvCaloriesSpear: TextView = itemView.findViewById(R.id.tvCaloriesSpear)
     val ivFood: ImageView = itemView.findViewById(R.id.ivFood)
-
-    fun setFoodData(foodModel: FoodModel) {
-        Glide.with(ivFood).load(foodModel.link).into(ivFood)
-    }
+    val menuBar: TextView = itemView.findViewById(R.id.tvMenu)
 }

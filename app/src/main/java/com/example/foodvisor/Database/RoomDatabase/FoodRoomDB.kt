@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.masai.myjournalapp.Model.FoodModel
 
-@Database(entities = [FoodModel::class], version = 1)
+@Database(entities = [FoodModel::class], version = 2)
 abstract class FoodRoomDB : RoomDatabase() {
 
     abstract fun getFoodDAO(): FoodDAO

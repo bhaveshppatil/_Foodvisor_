@@ -1,10 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.BottomSheetFragment.SearchFragment">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/et_bg"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search food" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchView"
+        android:layout_margin="@dimen/dp_10" />
+
+
+    <TextView
+        android:id="@+id/tvNoSearch"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="search food in your food list"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:visibility="gone" />
 
 
 </RelativeLayout>

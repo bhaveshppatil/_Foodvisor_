@@ -14,4 +14,11 @@ interface FoodDAO {
     //Inside we need to pass the query.
     @Query("select * from food_manager")
     fun getFoodData(): LiveData<List<FoodModel>>
+
+    //Delete the record from Database
+    @Delete
+    fun removeFood(foodModel: FoodModel)
+
+    @Query("SELECT * FROM food_manager WHERE name LIKE :search")
+    fun getSearchData(search: String?): LiveData<List<FoodModel>>
 }

@@ -27,8 +27,10 @@
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/breakfast_item_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/dinner_item_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/drinks_item_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/food_item_layout.xml" value="0.264" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_add_food.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_age.xml" value="0.264" />
+        <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_favorite.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_goal.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_height.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
@@ -43,6 +45,7 @@
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/lunch_item_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/recipe_item_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/routine_item_row.xml" value="0.2" />
+        <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/menu/menu_list.xml" value="0.10555555555555556" />
       </map>
     </option>
   </component>

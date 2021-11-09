@@ -50,6 +50,13 @@
 
     </LinearLayout>
 
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/guakka_carries_food"/>
+
     <RelativeLayout
         android:id="@+id/design_bottom_sheet"
         android:layout_width="match_parent"

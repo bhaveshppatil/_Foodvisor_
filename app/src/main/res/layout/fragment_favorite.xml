@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.BottomSheetFragment.FavoriteFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/tvFavorites"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="150dp"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="Find your favorites here. Add them by clicking on the favorites anywhere in app"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
-</FrameLayout>
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="270dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/favorites" />
+
+</RelativeLayout>
