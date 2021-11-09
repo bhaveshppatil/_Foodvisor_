@@ -1,11 +1,10 @@
-package com.example.foodvisor.Fragments
+package com.example.foodvisor.Fragments.UserInput
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.foodvisor.R
 import com.example.foodvisor.Views.HomeScreen

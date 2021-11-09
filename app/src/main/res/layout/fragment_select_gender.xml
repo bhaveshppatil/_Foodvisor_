@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_color"
     android:orientation="vertical"
-    tools:context=".Fragments.SelectGender">
+    tools:context=".Fragments.UserInput.SelectGender">
 
     <TextView
         android:layout_width="match_parent"

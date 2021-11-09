@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_color"
     android:orientation="vertical"
-    tools:context=".Fragments.HeightFragment">
+    tools:context=".Fragments.UserInput.HeightFragment">
 
     <TextView
         android:layout_width="match_parent"

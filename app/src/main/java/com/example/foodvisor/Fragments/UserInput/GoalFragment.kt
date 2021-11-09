@@ -1,4 +1,4 @@
-package com.example.foodvisor.Fragments
+package com.example.foodvisor.Fragments.UserInput
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
