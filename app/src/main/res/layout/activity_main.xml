@@ -4,13 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_color"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="100dp"
         android:layout_gravity="center_vertical"
-        android:src="@drawable/_fv_logo" />
+        android:src="@drawable/fv_logo_horiz_white2" />
 
 </LinearLayout>

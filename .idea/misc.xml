@@ -18,6 +18,7 @@
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/drawable/gradient.xml" value="0.2703125" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/drawable/ic_baseline_cancel_24.xml" value="0.2703125" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/drawable/ic_baseline_find_in_page_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.2703125" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/drawable/intermittent_bg.xml" value="0.2703125" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/drawable/moleskine.xml" value="0.2703125" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/drawable/splash_screen_bg.xml" value="0.2703125" />
@@ -28,6 +29,7 @@
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/activity_premium_unlocked.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/activity_profile_creation.xml" value="0.2" />
+        <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/activity_random.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/add_new_food.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/add_new_routine.xml" value="0.264" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/breakfast_item_layout.xml" value="0.25416666666666665" />
@@ -40,18 +42,22 @@
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_diets.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_favorite.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_goal.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_graph.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_height.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_photo.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_privacy_policy.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_progress.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_recipe.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_recipe_info.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_search.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_select_gender.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_setting.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_typical_day.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/fragment_weight.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/lifestyle_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/lunch_item_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/pie_chart_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/recipe_item_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/routine_item_row.xml" value="0.2" />
         <entry key="..\:/Users/bhave/Music/ConstructWeek_Project/Foodvisor/app/src/main/res/layout/weight_loss_layout.xml" value="0.264" />

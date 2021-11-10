@@ -58,7 +58,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
             android:fontFamily="@font/poppins_medium"
             android:text="Weight loss"
             android:textSize="18sp" />
@@ -74,7 +75,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
             android:fontFamily="@font/poppins_medium"
             android:text="LifeStyle"
             android:textSize="18sp" />
@@ -90,7 +92,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
             android:fontFamily="@font/poppins_medium"
             android:text="Fitness"
             android:textSize="18sp" />

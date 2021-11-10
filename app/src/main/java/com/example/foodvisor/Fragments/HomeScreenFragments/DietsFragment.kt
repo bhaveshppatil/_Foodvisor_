@@ -111,32 +111,26 @@ class DietsFragment : Fragment(R.layout.fragment_diets), DietClickListeners {
         )
         lifestyleModelList.add(lifestyleModel1)
 
-        val lifestyleModel2 = LifestyleModel(
-            "Vegetarian",
-            "It is complete lifestyle change",
-            "https://www.healthline.com/nutrition/vegetarian-diet-plan"
-        )
-        lifestyleModelList.add(lifestyleModel2)
-
         val lifestyleModel = LifestyleModel(
             "Pregnancy",
-            "What to eat before, during and after pregnancy?",
+            "The period of life is very demanding in terms of nutritional quality.",
             "https://www.healthline.com/nutrition/13-foods-to-eat-when-pregnant"
         )
         lifestyleModelList.add(lifestyleModel)
 
+        val lifestyleModel2 = LifestyleModel(
+            "Vegetarian",
+            "Vegetarian diet involves reducing your lifestyle to keep your health",
+            "https://www.healthline.com/nutrition/vegetarian-diet-plan"
+        )
+        lifestyleModelList.add(lifestyleModel2)
+
     }
 
     private fun buildFitnessData() {
-        val fitnessModel = FitnessModel(
-            "Bulk",
-            "Build muscles, get stronger",
-            "https://www.healthline.com/nutrition/clean-bulk"
-        )
-        fitnessModelList.add(fitnessModel)
         val fitnessModel1 = FitnessModel(
             "Running",
-            "Adapt your diet to improve your performance",
+            "This Program is to Adapt your diet to improve your health performance",
             "https://www.healthline.com/nutrition/runners-diet"
         )
         fitnessModelList.add(fitnessModel1)
@@ -150,10 +144,17 @@ class DietsFragment : Fragment(R.layout.fragment_diets), DietClickListeners {
 
         val fitnessModel3 = FitnessModel(
             "Beach Body",
-            "Helps you to lose up to 9 pounds in 4 week",
+            "Beach body challenges is a preparation of your body for the sunny das",
             "https://www.verywellfit.com/does-beachbody-work-4158553"
         )
         fitnessModelList.add(fitnessModel3)
+
+        val fitnessModel = FitnessModel(
+            "Bulk",
+            "Build muscles, get stronger , You have the energy to build muscles",
+            "https://www.healthline.com/nutrition/clean-bulk"
+        )
+        fitnessModelList.add(fitnessModel)
 
     }
 

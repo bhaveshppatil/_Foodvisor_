@@ -7,20 +7,17 @@
     android:background="@drawable/bg_color"
     tools:context=".Fragments.HomeScreenFragments.AddFoodFragment">
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animation_view"
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        app:lottie_autoPlay="true"
-        app:lottie_fileName="stay_healthy.json"
-        app:lottie_loop="true" />
+    <ImageView
+        android:id="@+id/ivCooker"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/guakka_cooker" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/animation_view"
+        android:layout_below="@id/ivCooker"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:drawableBottom="@drawable/ic_baseline_linked_camera_24"
@@ -39,8 +36,7 @@
         android:layout_centerHorizontal="true"
         app:button_colors="@array/colors"
         app:button_icons="@array/icons"
-        app:icon_color="@color/white"
-        app:icon_menu="@drawable/ic_baseline_add_24" />
+        app:icon_color="@color/white" />
 
 
 </RelativeLayout>
