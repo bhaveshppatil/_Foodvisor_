@@ -18,12 +18,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/ivCooker"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:drawableBottom="@drawable/ic_baseline_linked_camera_24"
         android:fontFamily="@font/poppins_medium"
         android:gravity="center"
-        android:text="Don't forget, \nYou can always take a photo, we will recognize your food!"
+        android:text="Don't forget, \nYou can always add new food in your list, we will recognize your food!"
         android:textColor="@color/white"
         android:textSize="20sp" />
 
@@ -37,6 +37,5 @@
         app:button_colors="@array/colors"
         app:button_icons="@array/icons"
         app:icon_color="@color/white" />
-
 
 </RelativeLayout>

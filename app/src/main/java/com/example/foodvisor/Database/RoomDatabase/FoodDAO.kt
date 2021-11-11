@@ -21,4 +21,7 @@ interface FoodDAO {
 
     @Query("SELECT * FROM food_manager WHERE name LIKE :search")
     fun getSearchData(search: String?): LiveData<List<FoodModel>>
+
+    @Query("SELECT SUM(caloriesData) FROM food_manager")
+    fun getCalData(): LiveData<Int>
 }

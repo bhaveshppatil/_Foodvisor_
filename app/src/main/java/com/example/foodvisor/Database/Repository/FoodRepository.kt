@@ -22,6 +22,9 @@ class FoodRepository(val foodDAO: FoodDAO) {
     fun getFoodData(search: String): LiveData<List<FoodModel>> {
         return foodDAO.getSearchData(search)
     }
+    fun getCalData(): LiveData<Int> {
+        return foodDAO.getCalData()
+    }
 
     fun removeFood(foodModel: FoodModel) {
         CoroutineScope(Dispatchers.IO).launch {

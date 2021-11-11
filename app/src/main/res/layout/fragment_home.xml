@@ -24,13 +24,16 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/btnStartThisDiet"
+            android:id="@+id/btnPremiumHome"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_gravity="center"
-            android:layout_margin="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
             android:background="@drawable/lifestyle_bg"
             android:drawableStart="@drawable/ic_baseline_star_rate_24"
             android:drawablePadding="@dimen/dp_10"
@@ -47,13 +50,13 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:layout_marginTop="10dp"
+        android:layout_margin="@dimen/dp_10"
         app:cardCornerRadius="@dimen/dp_20">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/intermittent_bg">
+            android:background="@drawable/lifestyle_bg">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -81,6 +84,7 @@
                 app:cpb_round_border="false" />
 
             <TextView
+                android:id="@+id/tvHomeCal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
@@ -118,12 +122,15 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp_10"
+                app:cardCornerRadius="@dimen/dp_10">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -189,9 +196,9 @@
 
                         <androidx.cardview.widget.CardView
                             android:id="@+id/crdIVBreakfast"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            app:cardCornerRadius="30dp">
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:cardCornerRadius="25dp">
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -206,10 +213,10 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/dp_30"
                             android:layout_toEndOf="@id/crdIVBreakfast"
-                            android:fontFamily="@font/cantora_one"
+                            android:fontFamily="@font/capriola"
                             android:text="Breakfast"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="17sp" />
 
                         <TextView
                             android:id="@+id/tvBreakfastCal"
@@ -241,9 +248,9 @@
 
                         <androidx.cardview.widget.CardView
                             android:id="@+id/crdIVLunch"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            app:cardCornerRadius="30dp">
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:cardCornerRadius="25dp">
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -258,10 +265,10 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/dp_30"
                             android:layout_toEndOf="@id/crdIVLunch"
-                            android:fontFamily="@font/cantora_one"
+                            android:fontFamily="@font/capriola"
                             android:text="Lunch"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="17sp" />
 
                         <TextView
                             android:id="@+id/tvLunchCal"
@@ -292,9 +299,9 @@
 
                         <androidx.cardview.widget.CardView
                             android:id="@+id/crdIVDinner"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            app:cardCornerRadius="30dp">
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:cardCornerRadius="25dp">
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -309,10 +316,10 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/dp_30"
                             android:layout_toEndOf="@id/crdIVDinner"
-                            android:fontFamily="@font/cantora_one"
+                            android:fontFamily="@font/capriola"
                             android:text="Dinner"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="17sp" />
 
                         <TextView
                             android:id="@+id/tvDinnerCal"
@@ -343,9 +350,9 @@
 
                         <androidx.cardview.widget.CardView
                             android:id="@+id/crdIVDrinks"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            app:cardCornerRadius="30dp">
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:cardCornerRadius="25dp">
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -360,10 +367,10 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/dp_30"
                             android:layout_toEndOf="@id/crdIVDrinks"
-                            android:fontFamily="@font/cantora_one"
-                            android:text="Breakfast"
+                            android:fontFamily="@font/capriola"
+                            android:text="Drinks"
                             android:textColor="@color/black"
-                            android:textSize="20sp" />
+                            android:textSize="17sp" />
 
                         <TextView
                             android:id="@+id/tvDrinksCal"
@@ -388,6 +395,144 @@
                     </RelativeLayout>
 
                 </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                app:cardCornerRadius="@dimen/dp_20">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_20">
+
+                    <TextView
+                        android:id="@+id/tvChallenge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:fontFamily="@font/acme"
+                        android:text="Water Challenge"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvWater"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvChallenge"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:fontFamily="@font/cantora_one"
+                        android:text="Water"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvGoal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvWater"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:fontFamily="@font/cantora_one"
+                        android:text="Goal : 1.25 L" />
+
+                    <TextView
+                        android:id="@+id/tvWaterGoal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvWater"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:fontFamily="@font/cantora_one"
+                        android:text="0.00 L" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_below="@id/tvGoal"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/animationView1"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            app:lottie_autoPlay="false"
+                            app:lottie_loop="false"
+                            app:lottie_rawRes="@raw/glass_water" />
+
+
+                        <TextView
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/animationView2"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            app:lottie_autoPlay="false"
+                            app:lottie_loop="false"
+                            app:lottie_rawRes="@raw/glass_water" />
+
+                        <TextView
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/animationView3"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            app:lottie_autoPlay="false"
+                            app:lottie_loop="false"
+                            app:lottie_rawRes="@raw/glass_water" />
+
+                        <TextView
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/animationView4"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            app:lottie_autoPlay="false"
+                            app:lottie_loop="false"
+                            app:lottie_rawRes="@raw/glass_water" />
+
+                        <TextView
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/animationView5"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            app:lottie_autoPlay="false"
+                            app:lottie_loop="false"
+                            app:lottie_rawRes="@raw/glass_water" />
+
+                    </LinearLayout>
+                </RelativeLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 

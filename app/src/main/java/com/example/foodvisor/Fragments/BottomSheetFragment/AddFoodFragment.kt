@@ -70,9 +70,9 @@ class AddFoodFragment : Fragment(R.layout.fragment_photo), Clicklistener {
                 val foodTitle = dialog.etFoodName.text.toString()
 
                 foodModel = if (data % 2 == 0) {
-                    FoodModel(foodTitle, "35 cal, 5 spear(64g")
+                    FoodModel(foodTitle, "35 cal, 5 spear(64g", 35)
                 } else {
-                    FoodModel(foodTitle, "63 cal, 7 spear(82g")
+                    FoodModel(foodTitle, "63 cal, 7 spear(82g", 65)
                 }
 
                 foodViewModel.addFoodData(foodModel)

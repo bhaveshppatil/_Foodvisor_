@@ -20,6 +20,10 @@ class FoodViewModel(private val foodRepository: FoodRepository) : ViewModel() {
         return foodRepository.getFoodData(search)
     }
 
+    fun getCaloriesData(): LiveData<Int> {
+        return foodRepository.getCalData()
+    }
+
     fun removeFood(foodModel: FoodModel) {
         foodRepository.removeFood(foodModel)
     }
