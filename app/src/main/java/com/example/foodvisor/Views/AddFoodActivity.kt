@@ -60,11 +60,7 @@ class AddFoodActivity : AppCompatActivity() {
         pgsBar = findViewById<View>(R.id.progressBar4) as ProgressBar
         pgsBar.max = 650
         foodViewModel.getCaloriesData().observe(this, Observer {
-            total = if (it.toString().isBlank()) {
-                0;
-            } else {
-                it
-            }
+            total = it ?: 0
             if (total <= 650) {
                 pgsBar.progress = total
                 update_progress.text = "${total.toString()} / ${pgsBar.max} "

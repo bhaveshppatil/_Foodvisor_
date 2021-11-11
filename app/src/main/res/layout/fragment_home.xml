@@ -92,7 +92,7 @@
                 android:layout_marginTop="@dimen/dp_10"
                 android:fontFamily="@font/concert_one"
                 android:gravity="center"
-                android:text="2030\nCal"
+                android:text="0\nCal"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 

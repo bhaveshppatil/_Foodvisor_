@@ -24,6 +24,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private var count: Double = 0.00
     var total: Int = 0
+    var totalCalories: Int = 0
     private lateinit var circularProgressBar: CircularProgressBar
     private lateinit var foodDAO: FoodDAO
     private lateinit var foodViewModel: FoodViewModel
@@ -41,12 +42,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             ViewModelProviders.of(this, foodViewModelFactory).get(FoodViewModel::class.java)
 
         foodViewModel.getCaloriesData().observe(viewLifecycleOwner, Observer {
-            total = if (it.toString().isBlank()) {
-                0;
-            } else {
-                it
-            }
-            val totalCalories = total * 4
+            total = it ?: 0
+            totalCalories = total * 4
             if (total <= 812) {
                 tvBreakfastCal.text = "${total.toString()} / 508 Cal"
                 tvLunchCal.text = "${total.toString()} / 812 Cal"
@@ -54,6 +51,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 tvDrinksCal.text = "${total.toString()} / 720 Cal"
                 tvHomeCal.text = "${totalCalories.toFloat()} \nCal"
             }
+            circularProgressBar.setProgressWithAnimation(totalCalories.toFloat() + 0f, 1000) // =1s
         })
 
         btnPremiumHome.setOnClickListener {
@@ -126,9 +124,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
             // Set Progress
             progress = 65f
-            // or with animation
-            setProgressWithAnimation(100f + total, 1000) // =1s
-
             // Set Progress Max
             progressMax = 1000f
 
