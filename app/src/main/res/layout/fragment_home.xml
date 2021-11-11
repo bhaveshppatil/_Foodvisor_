@@ -1,14 +1,395 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
+    android:orientation="vertical"
     tools:context=".Fragments.HomeScreenFragments.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="60dp">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:fontFamily="@font/kalam"
+            android:text="Unlock everything now !"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnStartThisDiet"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@drawable/lifestyle_bg"
+            android:drawableStart="@drawable/ic_baseline_star_rate_24"
+            android:drawablePadding="@dimen/dp_10"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingEnd="@dimen/dp_20"
+            android:text="Go Premium"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="@dimen/dp_20">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/intermittent_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_10"
+                android:fontFamily="@font/acme"
+                android:gravity="center"
+                android:text="65\n Eaten"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:cpb_background_progressbar_color="#b6bbd8"
+                app:cpb_background_progressbar_width="5dp"
+                app:cpb_progress_direction="to_right"
+                app:cpb_progressbar_color="#3f51b5"
+                app:cpb_progressbar_width="10dp"
+                app:cpb_round_border="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:fontFamily="@font/concert_one"
+                android:gravity="center"
+                android:text="2030\nCal"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_30"
+                android:fontFamily="@font/acme"
+                android:gravity="center"
+                android:text="65\n Burned"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/dp_50"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_gravity="start"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="25dp">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp_20"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <Space
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="match_parent" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="3"
+                            android:background="@drawable/lifestyle_bg"
+                            android:drawableStart="@drawable/ic_baseline_calendar_today_24"
+                            android:paddingStart="@dimen/dp_50"
+                            android:paddingEnd="@dimen/dp_50"
+                            android:text="T o d a y"
+                            android:textSize="16sp" />
+
+                        <Space
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="match_parent" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/dp_50"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="25dp">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp_20"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/crdIVBreakfast"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:cardCornerRadius="30dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:src="@drawable/dinner_64" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/tvBreakfastHome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_30"
+                            android:layout_toEndOf="@id/crdIVBreakfast"
+                            android:fontFamily="@font/cantora_one"
+                            android:text="Breakfast"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvBreakfastCal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvBreakfastHome"
+                            android:layout_marginStart="@dimen/dp_30"
+                            android:layout_toEndOf="@id/crdIVBreakfast"
+                            android:fontFamily="@font/averia_libre"
+                            android:text="65 / 508 Cal"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/ivBreakfastAdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_baseline_add_circle_outline_24" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/crdIVLunch"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:cardCornerRadius="30dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:src="@drawable/salad" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/tvLunchHome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_30"
+                            android:layout_toEndOf="@id/crdIVLunch"
+                            android:fontFamily="@font/cantora_one"
+                            android:text="Lunch"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvLunchCal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvLunchHome"
+                            android:layout_marginStart="@dimen/dp_30"
+                            android:layout_toEndOf="@id/crdIVLunch"
+                            android:fontFamily="@font/averia_libre"
+                            android:text="65 / 812 Cal"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/ivLunchAdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_baseline_add_circle_outline_24" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/crdIVDinner"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:cardCornerRadius="30dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:src="@drawable/dinner1_64" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/tvDinnerHome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_30"
+                            android:layout_toEndOf="@id/crdIVDinner"
+                            android:fontFamily="@font/cantora_one"
+                            android:text="Dinner"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvDinnerCal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvDinnerHome"
+                            android:layout_marginStart="@dimen/dp_30"
+                            android:layout_toEndOf="@id/crdIVDinner"
+                            android:fontFamily="@font/averia_libre"
+                            android:text="65 / 609 Cal"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/ivDinnerAdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_baseline_add_circle_outline_24" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/crdIVDrinks"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:cardCornerRadius="30dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:src="@drawable/drink_64" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/tvDrinksHome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_30"
+                            android:layout_toEndOf="@id/crdIVDrinks"
+                            android:fontFamily="@font/cantora_one"
+                            android:text="Breakfast"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvDrinksCal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvDrinksHome"
+                            android:layout_marginStart="@dimen/dp_30"
+                            android:layout_toEndOf="@id/crdIVDrinks"
+                            android:fontFamily="@font/averia_libre"
+                            android:text="0 / 508 Cal"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/ivDrinksAdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_baseline_add_circle_outline_24" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

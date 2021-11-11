@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,19 +9,21 @@
     tools:context=".Views.LoginActivity">
 
     <FrameLayout
+        android:id="@+id/frameLayoutLogo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/_fv_logo" />
+            android:layout_height="100dp"
+            android:src="@drawable/fv_logo_horiz_white2" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="20dp"
             android:gravity="center"
             android:text="Eat Smart, Live Better"
             android:textColor="@color/white"
@@ -31,14 +33,17 @@
     <ImageView
         android:id="@+id/ivFVGif"
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:src="@drawable/_635882753347" />
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/guakka_grades" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/crdGoogleLogIn"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/ivFVGif"
         android:layout_marginStart="70dp"
+        android:layout_marginTop="@dimen/dp_50"
         android:layout_marginEnd="70dp"
         android:background="@color/white"
         app:cardCornerRadius="10dp">
@@ -59,7 +64,8 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/crdFacebookLogIn"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/crdGoogleLogIn"
         android:layout_marginStart="70dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="70dp"
@@ -83,6 +89,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/crdFacebookLogIn"
         android:layout_marginTop="50dp"
         android:fontFamily="@font/arbutus_slab"
         android:gravity="center"
@@ -91,4 +98,4 @@
         android:textColor="@color/white"
         android:textSize="16sp" />
 
-</LinearLayout>
+</RelativeLayout>

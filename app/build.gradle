@@ -78,6 +78,7 @@ dependencies {
 
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
+    //CircleMenu
     implementation 'com.ramotion.circlemenu:circle-menu:0.3.2'
 
     // Lottie dependency
@@ -99,7 +100,10 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$arch_version"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:$arch_version"
 
-    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    //AnyChart
     implementation 'com.github.AnyChart:AnyChart-Android:1.1.2'
+
+    //CircularProgressBar
+    implementation 'com.mikhaellopez:circularprogressbar:3.1.0'
 
 }
