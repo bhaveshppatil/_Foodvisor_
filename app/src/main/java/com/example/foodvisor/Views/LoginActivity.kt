@@ -45,8 +45,13 @@ class LoginActivity : AppCompatActivity() {
             signIn()
         }
 
+        tvEmailLogin.setOnClickListener {
+            Toast.makeText(this, "Currently Not Available", Toast.LENGTH_SHORT)
+                .show()
+        }
+
         btnFacebookLogin.setOnClickListener {
-            Toast.makeText(this, "Button Clicked", Toast.LENGTH_SHORT)
+            Toast.makeText(this, "Currently Not Available", Toast.LENGTH_SHORT)
                 .show()
         }
     }

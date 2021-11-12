@@ -33,7 +33,6 @@ class ProgressFragment : Fragment(R.layout.fragment_progress) {
 
     private var mAuth: FirebaseAuth? = null
     private lateinit var imageView: ImageView
-    lateinit var mGoogleSignInClient: GoogleSignInClient
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -63,13 +62,6 @@ class ProgressFragment : Fragment(R.layout.fragment_progress) {
             val intent = Intent(context, PremiumUnlocked::class.java)
             startActivity(intent)
         }
-
-        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken(getString(R.string.default_web_client_id))
-            .requestEmail()
-            .build()
-        mGoogleSignInClient = GoogleSignIn.getClient(context, gso)
-
 
         btnLogout.setOnClickListener {
             val builder = AlertDialog.Builder(context)
