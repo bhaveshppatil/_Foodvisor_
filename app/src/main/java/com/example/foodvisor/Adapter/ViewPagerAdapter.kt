@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.example.foodvisor.Fragments.BottomSheetFragment.FavoriteFragment
-import com.example.foodvisor.Fragments.BottomSheetFragment.AddFoodFragment
+import com.example.foodvisor.Fragments.BottomSheetFragment.AddFoodFragmentBtm
 import com.example.foodvisor.Fragments.BottomSheetFragment.SearchFragment
 
 internal class ViewPagerAdapter(
@@ -24,7 +24,7 @@ internal class ViewPagerAdapter(
                 SearchFragment()
             }
             1 -> {
-                AddFoodFragment()
+                AddFoodFragmentBtm()
             }
             2 -> {
                 FavoriteFragment()

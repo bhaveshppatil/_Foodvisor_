@@ -40,31 +40,16 @@ class HomeScreen : AppCompatActivity() {
         bottomNavigation.setCount(4, "10")
         bottomNavigation.show(3, true)
 
-        bottomNavigation.setOnClickMenuListener { item ->
-            Toast.makeText(
-                this, "Clicked" + item.id,
-                Toast.LENGTH_SHORT
-            ).show()
+        bottomNavigation.setOnClickMenuListener {
+
         }
 
-        bottomNavigation.setOnReselectListener { item ->
-            Toast.makeText(
-                this,
-                "Reselect" + item.id,
-                Toast.LENGTH_SHORT
-            ).show()
+        bottomNavigation.setOnReselectListener {
+
         }
     }
 
     private fun loadFragment(fragment: Fragment?) {
         supportFragmentManager.beginTransaction().replace(R.id.frameLayout, fragment!!).commit()
     }
-
-   /* private fun loadFragment(fragment: Fragment) {
-        // load fragment
-        val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.frameLayout, fragment)
-        transaction.addToBackStack("addFrag")
-        transaction.commit()
-    }*/
 }

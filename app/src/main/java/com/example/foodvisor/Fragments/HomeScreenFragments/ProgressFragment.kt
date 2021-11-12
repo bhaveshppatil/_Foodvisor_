@@ -1,5 +1,6 @@
 package com.example.foodvisor.Fragments.HomeScreenFragments
 
+import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -18,17 +19,27 @@ import com.anychart.enums.Position
 import com.anychart.enums.TooltipPositionMode
 import com.bumptech.glide.Glide
 import com.example.foodvisor.R
+import com.example.foodvisor.Views.LoginActivity
 import com.example.foodvisor.Views.PremiumUnlocked
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_progress.*
 import java.util.*
 
 
 class ProgressFragment : Fragment(R.layout.fragment_progress) {
+
     private var mAuth: FirebaseAuth? = null
     private lateinit var imageView: ImageView
+    lateinit var mGoogleSignInClient: GoogleSignInClient
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         // Inflate the layout for this fragment
         mAuth = FirebaseAuth.getInstance()
         return super.onCreateView(inflater, container, savedInstanceState)
@@ -51,6 +62,28 @@ class ProgressFragment : Fragment(R.layout.fragment_progress) {
         btnPremium.setOnClickListener {
             val intent = Intent(context, PremiumUnlocked::class.java)
             startActivity(intent)
+        }
+
+        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            .requestIdToken(getString(R.string.default_web_client_id))
+            .requestEmail()
+            .build()
+        mGoogleSignInClient = GoogleSignIn.getClient(context, gso)
+
+
+        btnLogout.setOnClickListener {
+            val builder = AlertDialog.Builder(context)
+            builder.apply {
+                setTitle("Are you sure you want to Logout??")
+                setPositiveButton("Yes") { _, _ ->
+                    mAuth?.signOut()
+                    val intent = Intent(context, LoginActivity::class.java)
+                    startActivity(intent)
+                }
+                setNegativeButton("No") { _, _ -> }
+                create()
+                show()
+            }
         }
 
         val anyChartView = view.findViewById<AnyChartView>(R.id.any_chart_view_random)

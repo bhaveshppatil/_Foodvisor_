@@ -25,7 +25,7 @@ import com.masai.myjournalapp.ViewModel.FoodViewModelFactory
 import com.masai.myjournalapp.adapter.FoodAdapter
 import kotlinx.android.synthetic.main.add_new_food.*
 
-class AddFoodFragment : Fragment(R.layout.fragment_photo), Clicklistener {
+class AddFoodFragmentBtm : Fragment(R.layout.fragment_photo), Clicklistener {
 
     private val foodList = mutableListOf<FoodModel>()
     lateinit var foodAdapter: FoodAdapter

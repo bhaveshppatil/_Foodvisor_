@@ -125,7 +125,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             // Set Progress
             progress = 65f
             // Set Progress Max
-            progressMax = 1000f
+            progressMax = 2570f
 
             // Set ProgressBar Color
             progressBarColor = Color.BLACK
