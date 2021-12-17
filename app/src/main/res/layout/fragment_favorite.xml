@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.BottomSheetFragment.FavoriteFragment">
+    tools:context=".fragments.bottomSheetFragment.FavoriteFragment">
 
     <TextView
         android:id="@+id/tvFavorites"

@@ -15,6 +15,51 @@
       },
       "oauth_client": [
         {
+          "client_id": "998687804092-v1a3n65jj277q2erfo6drrjs3oc778dh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodvisor",
+            "certificate_hash": "0039e88458390306b8b1203475c9e82a93c86bee"
+          }
+        },
+        {
+          "client_id": "998687804092-hmm81p776msih3u3uv6gie6cfesrt56a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8063sJoW5GZS_YnG7HrLiNKdCWUbkrE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998687804092-hmm81p776msih3u3uv6gie6cfesrt56a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998687804092:android:9b756ec0469569675c9eb9",
+        "android_client_info": {
+          "package_name": "com.masai.foodvisor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998687804092-fpetqbjdvr7gti4prkfaq15hc31r4u4f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.masai.foodvisor",
+            "certificate_hash": "0039e88458390306b8b1203475c9e82a93c86bee"
+          }
+        },
+        {
           "client_id": "998687804092-hmm81p776msih3u3uv6gie6cfesrt56a.apps.googleusercontent.com",
           "client_type": 3
         }

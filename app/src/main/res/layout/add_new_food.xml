@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:background="#E5FAF4"
         android:orientation="vertical"
-        tools:context=".Views.CreateTask">
+        tools:context=".views.CreateTask">
 
         <RelativeLayout
             android:id="@+id/lyChooseGoal"

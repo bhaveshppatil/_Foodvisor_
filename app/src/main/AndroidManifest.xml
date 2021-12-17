@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.foodvisor">
+    package="com.masai.foodvisor">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,26 +13,25 @@
         android:theme="@style/Theme.Foodvisor">
 
         <activity
-            android:name=".Views.AddFoodActivity"
+            android:name=".views.AddFoodActivity"
             android:exported="true" />
         <activity
-            android:name=".Views.IngredientsActivity"
+            android:name=".views.IngredientsActivity"
             android:exported="true" />
         <activity
-            android:name=".Views.PremiumUnlocked"
-            android:exported="true" />
-
-        <activity
-            android:name=".Views.HomeScreen"
+            android:name=".views.PremiumUnlocked"
             android:exported="true" />
         <activity
-            android:name=".Views.ProfileCreation"
+            android:name=".views.HomeScreen"
             android:exported="true" />
         <activity
-            android:name=".Views.LoginActivity"
+            android:name=".views.ProfileCreation"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".views.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".views.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

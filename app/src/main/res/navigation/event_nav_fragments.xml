@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/selectGender"
-        android:name="com.example.foodvisor.Fragments.UserInput.SelectGender"
+        android:name="com.masai.foodvisor.fragments.userInput.SelectGender"
         android:label="fragment_select_gender"
         tools:layout="@layout/fragment_select_gender">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/ageFragment"
-        android:name="com.example.foodvisor.Fragments.UserInput.AgeFragment"
+        android:name="com.masai.foodvisor.fragments.userInput.AgeFragment"
         android:label="fragment_age"
         tools:layout="@layout/fragment_age">
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/heightFragment"
-        android:name="com.example.foodvisor.Fragments.UserInput.HeightFragment"
+        android:name="com.masai.foodvisor.fragments.userInput.HeightFragment"
         android:label="fragment_height"
         tools:layout="@layout/fragment_height">
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/goalFragment"
-        android:name="com.example.foodvisor.Fragments.UserInput.GoalFragment"
+        android:name="com.masai.foodvisor.fragments.userInput.GoalFragment"
         android:label="fragment_goal"
         tools:layout="@layout/fragment_goal">
         <action
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/typicalDayFragment"
-        android:name="com.example.foodvisor.Fragments.UserInput.TypicalDayFragment"
+        android:name="com.masai.foodvisor.fragments.userInput.TypicalDayFragment"
         android:label="fragment_typical_day"
         tools:layout="@layout/fragment_typical_day" >
         <action
@@ -52,7 +52,7 @@
     </fragment>
     <fragment
         android:id="@+id/weightFragment"
-        android:name="com.example.foodvisor.Fragments.UserInput.WeightFragment"
+        android:name="com.masai.foodvisor.fragments.userInput.WeightFragment"
         android:label="fragment_weight"
         tools:layout="@layout/fragment_weight">
         <action
@@ -61,7 +61,7 @@
     </fragment>
     <fragment
         android:id="@+id/privacyPolicy"
-        android:name="com.example.foodvisor.Fragments.UserInput.PrivacyPolicy"
+        android:name="com.masai.foodvisor.fragments.userInput.PrivacyPolicy"
         android:label="fragment_privacy_policy"
         tools:layout="@layout/fragment_privacy_policy" />
 </navigation>

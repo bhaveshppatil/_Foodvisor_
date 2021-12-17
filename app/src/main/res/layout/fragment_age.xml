@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_color"
     android:orientation="vertical"
-    tools:context=".Fragments.UserInput.AgeFragment">
+    tools:context=".fragments.userInput.AgeFragment">
 
 
     <TextView

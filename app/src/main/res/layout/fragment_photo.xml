@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.BottomSheetFragment.AddFoodFragmentBtm">
+    tools:context="com.masai.foodvisor.fragments.bottomSheetFragment.AddFoodFragmentBtm">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/food_recycler_view"
