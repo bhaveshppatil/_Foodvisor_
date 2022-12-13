@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk 31
 
     defaultConfig {
         configurations.all {
@@ -15,7 +15,7 @@ android {
         }
         applicationId "com.masai.foodvisor"
         minSdk 21
-        targetSdk 30
+        targetSdk 31
         versionCode 1
         versionName "1.0"
 
@@ -90,8 +90,8 @@ dependencies {
     implementation "org.jetbrains.anko:anko-commons:$anko_version"
 
     //Room
-    implementation 'androidx.room:room-ktx:2.3.0'
-    kapt 'androidx.room:room-compiler:2.3.0'
+    implementation 'androidx.room:room-ktx:2.4.3'
+    kapt 'androidx.room:room-compiler:2.4.3'
 
     // ViewModel and LiveData
     def arch_version = '2.2.0-alpha01'
